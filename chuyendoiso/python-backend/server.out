@@ -1,0 +1,23 @@
+CDS Scanner API dang khoi dong...
+Upload directory: D:\CDS\python-backend\uploads
+Processed directory: D:\CDS\python-backend\processed
+Results directory: D:\CDS\python-backend\results
+API server da san sang!
+INFO:     127.0.0.1:62399 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62400 - "GET /health HTTP/1.1" 200 OK
+ CDS Scanner API dang khoi dong...
+Upload directory: D:\CDS\python-backend\uploads
+Processed directory: D:\CDS\python-backend\processed
+Results directory: D:\CDS\python-backend\results
+API server da san sang!
+INFO:     127.0.0.1:62606 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62606 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63411 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63411 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:63847 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64061 - "GET / HTTP/1.1" 200 OK
+ INFO:     127.0.0.1:50619 - "GET /db/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53710 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53723 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53724 - "GET /db/health HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:53733 - "GET /openapi.json HTTP/1.1" 200 OK

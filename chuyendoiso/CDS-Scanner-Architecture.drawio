@@ -1,0 +1,159 @@
+<mxfile host="app.diagrams.net" modified="2024-01-01T00:00:00.000Z" agent="5.0" etag="xxx" version="22.1.16" type="device">
+  <diagram name="CDS Scanner Architecture" id="architecture">
+    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Title -->
+        <mxCell id="title" value="CDS Document Scanner - Kiến trúc hệ thống" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#22c55e;" vertex="1" parent="1">
+          <mxGeometry x="400" y="20" width="400" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- User Layer -->
+        <mxCell id="user" value="👤 Người dùng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e5f5e0;strokeColor=#22c55e;fontSize=16;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="100" width="120" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Browser Layer -->
+        <mxCell id="browser" value="🌐 Trình duyệt web" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e5f5e0;strokeColor=#22c55e;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="300" y="100" width="140" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Frontend Components -->
+        <mxCell id="frontend" value="⚛️ Frontend Components" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0f9ff;strokeColor=#0ea5e9;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="500" y="80" width="140" height="100" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="header" value="Header.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0ea5e9;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="90" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="hero" value="Hero.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0ea5e9;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="115" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="scanner" value="Scanner.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0ea5e9;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="140" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="features" value="Features.tsx" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#0ea5e9;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="510" y="165" width="120" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- OCR Engine -->
+        <mxCell id="ocr" value="🔍 Tesseract.js OCR Engine" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef3c7;strokeColor=#f59e0b;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="160" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Data Flow -->
+        <mxCell id="flow1" value="Upload hình ảnh" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22c55e;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="user" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow2" value="Xử lý OCR" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22c55e;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="browser" target="ocr">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="flow3" value="Kết quả text" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#22c55e;strokeWidth=2;fontSize=12;" edge="1" parent="1" source="ocr" target="browser">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        
+        <!-- Technologies -->
+        <mxCell id="tech-title" value="🛠️ Công nghệ sử dụng" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="100" y="250" width="300" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="nextjs" value="Next.js 14" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="react" value="React 18" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#61dafb;strokeColor=none;fontColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="typescript" value="TypeScript" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3178c6;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="340" y="300" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tailwind" value="Tailwind CSS" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#06b6d4;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="tesseract" value="Tesseract.js" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f59e0b;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="220" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="dropzone" value="React Dropzone" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#8b5cf6;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="340" y="360" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Features -->
+        <mxCell id="features-title" value="✨ Tính năng chính" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="300" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature1" value="OCR tiếng Việt + Anh" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="300" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature2" value="Xử lý đa định dạng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="340" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature3" value="Bảo mật tuyệt đối" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature4" value="Responsive Design" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="300" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature5" value="Xuất dữ liệu linh hoạt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="340" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="feature6" value="Giao diện tiếng Việt" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dcfce7;strokeColor=#16a34a;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="380" width="140" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Color Scheme -->
+        <mxCell id="colors-title" value="🎨 Bảng màu chủ đạo" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#374151;" vertex="1" parent="1">
+          <mxGeometry x="100" y="450" width="300" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="primary-color" value="Primary: #22c55e" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#22c55e;strokeColor=none;fontColor=#ffffff;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="500" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="secondary-color" value="Secondary: #64748b" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#64748b;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="500" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="bg-color" value="Background: #f8fafc" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8fafc;strokeColor=#d1d5db;fontColor=#374151;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="100" y="560" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="accent-color" value="Accent: #0ea5e9" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#0ea5e9;strokeColor=none;fontColor=#ffffff;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="560" width="140" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Security Note -->
+        <mxCell id="security" value="🔒 Bảo mật: Dữ liệu được xử lý hoàn toàn trên trình duyệt, không gửi lên server bên ngoài" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fef2f2;strokeColor=#dc2626;fontColor=#991b1b;fontSize=12;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="450" width="300" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Performance Note -->
+        <mxCell id="performance" value="⚡ Hiệu suất: Xử lý OCR trong vài giây với độ chính xác lên đến 99%" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f0fdf4;strokeColor=#16a34a;fontColor=#166534;fontSize=12;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="600" y="530" width="300" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Footer -->
+        <mxCell id="footer" value="CDS Document Scanner - Giải pháp scan dữ liệu thông minh cho người Việt Nam 🇻🇳" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#22c55e;" vertex="1" parent="1">
+          <mxGeometry x="200" y="650" width="800" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile> 

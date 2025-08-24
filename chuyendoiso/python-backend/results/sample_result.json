@@ -1,0 +1,13 @@
+{
+  "document_type": "hop_dong_lao_dong",
+  "extracted_text": "HỢP ĐỒNG LAO ĐỘNG\nHọ và tên: Nguyễn Văn A\nMã nhân viên: NV001",
+  "processed_data": {
+    "ho_ten": "Nguyễn Văn A",
+    "ma_nhan_vien": "NV001",
+    "chuc_danh": "Nhân viên",
+    "loai_hop_dong": "Chính thức",
+    "thoi_han_hop_dong": "12 tháng"
+  },
+  "confidence": "high",
+  "timestamp": "2025-08-12T08:04:03.013163"
+}
